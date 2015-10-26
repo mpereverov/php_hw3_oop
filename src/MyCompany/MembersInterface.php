@@ -12,7 +12,7 @@ interface MembersInterface {
 
     public function getName();
 
-    public function setName($firstName, $lastName);
+    public function setFullName($firstName, $lastName);
 
     public function getGroup();
 

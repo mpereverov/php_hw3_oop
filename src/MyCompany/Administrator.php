@@ -29,7 +29,7 @@ class Administrator extends Member
 
     public function __toString()
     {
-        $str = parent::toString();
+        $str = parent::__toString();
         $str .= 'My rights: ' "</br><ul>";
         $str .= "<li>" . $this->createUser() . "</li>";
         $str .= "<li>" . $this->deleteUser() . "</li>";

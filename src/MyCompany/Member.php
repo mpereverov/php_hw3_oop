@@ -12,16 +12,22 @@ class Member implements MembersInterface
     protected $firstName;
     protected $lastName;
     protected $group;
-    protected $loggedIn;
+
 
     /**
      * @param $firstName
      * @param $lastName
      */
-    public function __construct() {
-        $this->firstName = $firstName;
-        $this->lastName = $lastName;
-        $this->loggedIn = false;
+    public function __construct($firstName, $lastName) {
+        $this->setFullName($firstName, $lastName);
+    }
+
+    public function setFullName($firstName, $lastName)
+    {
+        if (is_string($firstName) && is_string($lastName)) {
+            $this->firstName = $firstName;
+            $this->lastName = $lastName;
+        }
     }
 
     public function getName()

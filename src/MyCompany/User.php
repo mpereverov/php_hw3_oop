@@ -28,7 +28,7 @@ class User extends Member
 
     public function __toString()
     {
-        $str = parent::toString();
+        $str = parent::__toString();
         $str .= 'My rights: ' "</br><ul>";
         $str .= "<li>" . $this->readTasks() . "</li>";
         $str .= "<li>" . $this->sendFeedback() . "</li></ul>";
