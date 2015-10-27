@@ -14,7 +14,7 @@ use MyCompany\User;
 
 $admin = new Administrator('Ivan', 'Sobakin');
 $admin->setGroup('Administrators');
-$admin->__toString();
+echo $admin;
 
 $user = new User('Nik', 'Yuzov');
 $user->setGroup('Users');
