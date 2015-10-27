@@ -8,7 +8,6 @@
 
 require_once 'vendor/autoload.php';
 
-
 use MyCompany\Administrator;
 use MyCompany\User;
 

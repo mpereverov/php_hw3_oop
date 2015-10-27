@@ -10,7 +10,7 @@
 
     "autoload": {
         "psr-4": {
-            "MyComany\\": "src/MyCompany"
+            "MyCompany\\": "src/MyCompany"
         }
     },
 

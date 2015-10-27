@@ -40,7 +40,7 @@ class Member implements MembersInterface
     public function __toString()
     {
         $str = '';
-        $str .= 'Full Name: ' . $this->getName() . "</br>";
+        $str .= 'Full Name: ' . $this->getFullName() . "</br>";
         $str .= 'Group: ' . $this->getGroup() . "</br>";
 
         return $str;
