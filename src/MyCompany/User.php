@@ -8,18 +8,18 @@ class User extends Member
 
     public function readTasks()
     {
-        echo "$this->{getFullName()} can read their Tasks</br>";
+        return "{$this->getFullName()} can read their Tasks</br>";
     }
 
     public function sendFeedback()
     {
-        echo "$this->{getFullName()} can send a Feedback for Administrators</br>";
+        return "{$this->getFullName()} can send a Feedback for Administrators</br>";
     }
 
     public function __toString()
     {
         $str = parent::__toString();
-        $str .= 'My rights: ' . "</br><ul>";
+        $str .= 'My rights: ' . "<ul>";
         $str .= "<li>" . $this->readTasks() . "</li>";
         $str .= "<li>" . $this->sendFeedback() . "</li></ul>";
 

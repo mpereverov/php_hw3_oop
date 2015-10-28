@@ -17,4 +17,5 @@ echo $admin;
 
 $user = new User('Nik', 'Yuzov');
 $user->setGroup('Users');
-$user->__toString();
+//$user->__toString();
+echo $user;
